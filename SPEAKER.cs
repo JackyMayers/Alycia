@@ -5,7 +5,7 @@ using System.Text;
 using System.Speech.Synthesis;
 namespace Alycia
 {
-     public class SPEAKER
+     public class Speaker
     {
         private static SpeechSynthesizer sp = new SpeechSynthesizer();
         public static void Speak(string text)

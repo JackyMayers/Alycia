@@ -132,5 +132,18 @@ namespace Alycia
             "Alycia abre o Edge",
             "Quero acessar a internet"
         };
+        // clima e tempo
+        public static List<string> TempClim = new List<string>()
+        {
+            "Qual clima de hoje",
+            "Alycia qual temperatura",
+            "Alycia como ta o tempo"
+        };
+        public static List<string> MaisInfo = new List<string>()
+        {
+            "Alycia me de informações da cidade",
+            "Alycia Informações da cidade",
+            "Informações da cidade"
+        };
     }
 }

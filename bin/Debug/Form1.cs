@@ -24,6 +24,7 @@ namespace Alycia
         private SpeechSynthesizer synthesizer = new SpeechSynthesizer(); //Sintetizador
         private Browser browser;
         private Video mediaPlay;
+        private string city;
 
         public Form1()
         {
@@ -75,7 +76,7 @@ namespace Alycia
             }
             else
             {
-                Speak("já está maximizado");//, "A janela já está maximizada", "Já fiz isso");
+                Speak("Já está maximizado");//, "A janela já está maximizada", "Já fiz isso");
             }
         }
         private void Minimizewindow()
@@ -115,13 +116,13 @@ namespace Alycia
                 this.label1.ForeColor = Color.Yellow;
                 if(GrammarRules.AlyciaStopListening.Any(x => x == speech))
                 {
-                    r.setresposta("mandou parar");
+                    r.setresposta("Mandou parar");
                     isShymtListering = false;
                     Speak("Q S L vou descansar, se precisar é só chamar");//, "Tá bem, desliguei", "Ok quando quiser é so chamar");
                 }
                 else if (GrammarRules.AlyciaStartListening.Any(x => x == speech))
                 {
-                    r.setresposta("mandou continuar");
+                    r.setresposta("Mandou continuar");
                     isShymtListering = true;
                     Speak("Q A P, Q R V");//, "Pronta pra te atender", "Tava dormindo, diga o que mandas");
                 } else if (isShymtListering == true)
@@ -208,6 +209,14 @@ namespace Alycia
                             else if (GrammarRules.FecharNotas.Any(x => x == speech))
                             {
                                 Runner.FecharNotas();
+                            }
+                            else if (GrammarRules.TempClim.Any(x => x == speech))
+                            {
+                                Runner.GetTemperatura(city);
+                            }
+                            else if (GrammarRules.MaisInfo.Any(x => x == speech))
+                            {
+                                Runner.GetMaininfos(city);
                             }
                             else if (GrammarRules.OpenProgram.Any(x => x == speech))
                             {
@@ -316,6 +325,8 @@ namespace Alycia
                 c_commandsOfSystem.Add(GrammarRules.FecharNotas.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.AbrirVS.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.AbrirVSCode.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.TempClim.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.MaisInfo.ToArray());
 
 
                 GrammarBuilder gb_comandOfSystem = new GrammarBuilder();// 4:22
@@ -329,7 +340,7 @@ namespace Alycia
                 // Gramabuilder numeros
                 GrammarBuilder gb_number = new GrammarBuilder();
                 gb_number.Append(c_numero);
-                gb_number.Append(new Choices("mais", "menos", "vezes", "por"));
+                gb_number.Append(new Choices("Mais", "Menos", "Vezes", "Por"));
                 gb_number.Append(c_numero);
 
                 Grammar g_numero = new Grammar(gb_number);
@@ -355,7 +366,8 @@ namespace Alycia
                 // Inicia o reconhecimento
                 engine.RecognizeAsync(RecognizeMode.Multiple);
 
-                SPEAKER.Speak("Estou carregando as configurações");
+                Speaker.Speak("Estou carregando as configurações");
+                city = Loc.GetCityName(Runner.GetIp()).ToLower();
             }
             catch (Exception ex)
             {
@@ -373,7 +385,7 @@ namespace Alycia
         {
             
             LoadSpeech();
-            SPEAKER.Speak("Estou pronta");
+            Speaker.Speak("Estou pronta");
         }
 
     }

@@ -42,8 +42,8 @@ namespace Alycia
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SPEAKER.SetVoice(comboBox1.SelectedItem.ToString());
-            SPEAKER.Speak("A voz foi alterada", "Feito", "Como quizer");
+            Speaker.SetVoice(comboBox1.SelectedItem.ToString());
+            Speaker.Speak("A voz foi alterada", "Feito", "Como quizer");
         }
     }
 }

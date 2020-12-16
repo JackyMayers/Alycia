@@ -1,0 +1,3 @@
+Q A P Alycia=mandou continuar
+Abrir bloco de nota=mandou continuar
+Fechar bloco de notas=mandou continuar
