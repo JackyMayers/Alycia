@@ -1,2 +1,0 @@
-# Alycia
- Assistente Virtual
