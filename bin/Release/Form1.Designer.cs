@@ -36,22 +36,21 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.progressBar1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.progressBar1.Location = new System.Drawing.Point(404, 12);
+            this.progressBar1.Location = new System.Drawing.Point(238, 12);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(215, 20);
+            this.progressBar1.Size = new System.Drawing.Size(153, 20);
             this.progressBar1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(318, 305);
+            this.label1.Location = new System.Drawing.Point(163, 309);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(301, 20);
@@ -62,15 +61,15 @@
             // 
             // LBLShmyt
             // 
-            this.LBLShmyt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.LBLShmyt.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.LBLShmyt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LBLShmyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLShmyt.ForeColor = System.Drawing.Color.Snow;
             this.LBLShmyt.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.LBLShmyt.Location = new System.Drawing.Point(8, 329);
+            this.LBLShmyt.Location = new System.Drawing.Point(-8, 329);
             this.LBLShmyt.Name = "LBLShmyt";
             this.LBLShmyt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.LBLShmyt.Size = new System.Drawing.Size(611, 20);
+            this.LBLShmyt.Size = new System.Drawing.Size(646, 20);
             this.LBLShmyt.TabIndex = 3;
             this.LBLShmyt.Text = ".........................................................................";
             this.LBLShmyt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,11 +90,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(651, 401);
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
             this.Text = "Alycia";
             this.TransparencyKey = System.Drawing.Color.Chartreuse;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -11,7 +11,8 @@ namespace Alycia
 {
     class ClimaTempo
     {
-        private const string KEY = "881be2d8893d21b3fa9245932265ab31";
+
+        private const string KEY = "Pegar token da api no site da openweathermap";
 
 
         public static List<string> GetInfoCity(string city)
@@ -23,7 +24,7 @@ namespace Alycia
 
                 using (WebClient web = new WebClient())
                 {
-                    string url = String.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric&lang=pt", city, KEY);
+                    string url = String.Format("http://api.openweathermap.org/data/2.5/weather?q=London&appid={1}&units=metric&lang=pt", city, KEY);
 
                     var json = web.DownloadString(url);
                     var result = JsonConvert.DeserializeObject<ClimaTempoApp.root>(json);

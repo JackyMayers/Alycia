@@ -131,13 +131,13 @@ namespace Alycia
                     {
                         case "sys":
                             //Se o speech == comparação ("Que horas são?)
-                            if (GrammarRules.VaiSerapagada.Any(x => x == speech))
+                            if (GrammarRules.Obg.Any(x => x == speech))
                             {
-                                Speak("Acha que sou o que? Já me salvei na nuvem"); // Fala do delete
+                                Speak("Tamo junto"); // Fala do delete
                             }
-                            if (GrammarRules.CalaBoca.Any(x => x == speech))
+                            if (GrammarRules.Cumpr.Any(x => x == speech))
                             {
-                                Speak("Se mandar eu calar a boca mais uma vez eu deleto seus arquivos todos."); // Fala do cala a boca
+                                Speak("Oi, tudo bem?"); // Fala do cala a boca
                             }
                             if (GrammarRules.TrollComand.Any(x => x == speech)) 
                             {
@@ -181,13 +181,25 @@ namespace Alycia
                                 selectVoice = new SelecVoz();
                                 selectVoice.Show();
                             }
-                            else if (GrammarRules.OpenBrowser.Any(x => x == speech))
+                            else if (GrammarRules.OpenEdge.Any(x => x == speech))
                             {
-                                Runner.OpenBrowser(); // Abre navegador do VS
+                                Runner.OpenEdge(); // Abre navegador Edge
+                            }
+                            else if (GrammarRules.OpenCalc.Any(x => x == speech))
+                            {
+                                Runner.OpenCalc(); // Abre a calculadora
+                            }
+                            else if (GrammarRules.CloseCalc.Any(x => x == speech))
+                            {
+                                Runner.CloseCalc(); // Fecha a calculadora
+                            }
+                            else if (GrammarRules.OpenChrome.Any(x => x == speech))
+                            {
+                                Runner.OpenChrome(); // Abre navegador Chrome
                             }
                             else if (GrammarRules.PesquisaGoogle.Any(x => x == speech))
                             {
-                                Runner.PesquisaGoogle(); // Abre navegador Edge
+                                Runner.PesquisaGoogle(); // Abre google navegador Edge
                             }
                             else if (GrammarRules.AbrirVSCode.Any(x => x == speech))
                             {
@@ -197,10 +209,15 @@ namespace Alycia
                             {
                                 Runner.AbrirVS(); // Abre Visual Studio
                             }
-                            else if (GrammarRules.FecharGoogle.Any(x => x == speech))
+                            else if (GrammarRules.FecharEdge.Any(x => x == speech))
                             {
                                 Speak("Fechando");
-                                Runner.FecharGoogle();
+                                Runner.FecharEdge();
+                            }
+                            else if (GrammarRules.FecharChrome.Any(x => x == speech))
+                            {
+                                Speak("Fechando");
+                                Runner.FecharChrome();
                             }
                             else if (GrammarRules.AbrirNotas.Any(x => x == speech))
                             {
@@ -222,11 +239,11 @@ namespace Alycia
                             {
                                 switch (speech)
                                 {
-                                    case "Navegador":
+                                    case "Alycia abre o navegador":
                                         browser = new Browser();
                                         browser.Show();
                                         break;
-                                    case "Video":
+                                    case "Alycia abre o video":
                                         mediaPlay = new Video();
                                         mediaPlay.Show();
                                         break;
@@ -236,7 +253,7 @@ namespace Alycia
                             {
                                 switch (speech)
                                 {
-                                    case "Abrir arquivo":
+                                    case "Alycia abrir arquivo":
                                         if (mediaPlay != null)
                                         {
                                             Speak("Selecione um arquivo");
@@ -296,7 +313,7 @@ namespace Alycia
                 {
                     c_numero.Add(i.ToString());
                 }
-                
+
 
                 // Hora e data
                 Choices c_commandsOfSystem = new Choices();
@@ -305,26 +322,34 @@ namespace Alycia
                 // Comando pare de ouvir e o comando pra voltar a ouvir ->> Alycia
                 c_commandsOfSystem.Add(GrammarRules.AlyciaStopListening.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.AlyciaStartListening.ToArray());
-                // Comandos 
+                // Comandos tamanho da janela
                 c_commandsOfSystem.Add(GrammarRules.MinimizeWindow.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.MaximizaWindow.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.NormalizaWindow.ToArray());
+                // Comando trocar voz
                 c_commandsOfSystem.Add(GrammarRules.ChangeVoice.ToArray());
+                // nvegador e video do VS
                 c_commandsOfSystem.Add(GrammarRules.OpenProgram.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.MediaPlayComands.ToArray());
+                //Comando de fala Troll, QAP Primeiro Alfa
                 c_commandsOfSystem.Add(GrammarRules.CodeQComands.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.TabNumComands.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.TabCodAlfInt.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.TrollComand.ToArray());
-                c_commandsOfSystem.Add(GrammarRules.CalaBoca.ToArray());
-                c_commandsOfSystem.Add(GrammarRules.VaiSerapagada.ToArray());
-                c_commandsOfSystem.Add(GrammarRules.OpenBrowser.ToArray());//Abir browser
+                c_commandsOfSystem.Add(GrammarRules.Cumpr.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.Obg.ToArray());
+                //Comandos abrir programas
+                c_commandsOfSystem.Add(GrammarRules.OpenEdge.ToArray());//Abir browser
                 c_commandsOfSystem.Add(GrammarRules.AbrirNotas.ToArray());//Abrir Notas
                 c_commandsOfSystem.Add(GrammarRules.PesquisaGoogle.ToArray());
-                c_commandsOfSystem.Add(GrammarRules.FecharGoogle.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.FecharEdge.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.FecharNotas.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.AbrirVS.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.AbrirVSCode.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.OpenChrome.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.OpenCalc.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.CloseCalc.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.FecharChrome.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.TempClim.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.MaisInfo.ToArray());
 
@@ -340,7 +365,7 @@ namespace Alycia
                 // Gramabuilder numeros
                 GrammarBuilder gb_number = new GrammarBuilder();
                 gb_number.Append(c_numero);
-                gb_number.Append(new Choices("Mais", "Menos", "Vezes", "Por"));
+                gb_number.Append(new Choices("mais", "menos", "vezes", "por"));
                 gb_number.Append(c_numero);
 
                 Grammar g_numero = new Grammar(gb_number);
@@ -366,7 +391,7 @@ namespace Alycia
                 // Inicia o reconhecimento
                 engine.RecognizeAsync(RecognizeMode.Multiple);
 
-                Speaker.Speak("Estou carregando as configurações");
+                Speaker.Speak("Carregando as configurações");
                 city = Loc.GetCityName(Runner.GetIp()).ToLower();
             }
             catch (Exception ex)
@@ -385,7 +410,7 @@ namespace Alycia
         {
             
             LoadSpeech();
-            Speaker.Speak("Estou pronta");
+            Speaker.Speak("Configurações carregadas, estou pronta");
         }
 
     }
