@@ -42,7 +42,7 @@ namespace Alycia
         public static void AbrirVSCode()
         {
             Speaker.Speak("Entendido: Abrindo Visual Studio Code");
-            System.Diagnostics.Process.Start(@"C:\Users\fluvi\AppData\Local\Programs\Microsoft VS Code\Code.exe");
+            System.Diagnostics.Process.Start(@"C:\Users\*\AppData\Local\Programs\Microsoft VS Code\Code.exe");
 
         }
         public static void OpenPokerstars()
