@@ -141,7 +141,7 @@ namespace Alycia
                             }
                             if (GrammarRules.TrollComand.Any(x => x == speech)) 
                             {
-                                Speak("Se nem sua mãe acha, eu que não vou achar."); //Fala do Troll
+                                Speak("Talvez seja porque você não saiba programar."); //Fala do Troll
                             }
                             if (GrammarRules.CodeQComands.Any(x => x == speech)) // Codigo Q
                             {
@@ -155,7 +155,7 @@ namespace Alycia
                             {
                                 Speak("A – Alfa, B – Bravo, C – Charlie, D – Delta, E – Eco, F – Fox-Trot, G – Golf, H – Hotel, I – India, J – Juliet, K – Kilo, L – Lima, M – Maike, N – Noverber, O – Oscar, P – Papa, Q – Quebec, R – Romeo, S – Sierra, T – Tango, U – Uniform, V – Victor, W – Whisk, Y – Yankey, Z – Zulu");
                             }
-                                if (GrammarRules.WhatTimeIS.Any(x => x == speech))
+                            if (GrammarRules.WhatTimeIS.Any(x => x == speech))
                             {
                                 Runner.WhatTimeIS(); // Hora
                             }
@@ -219,6 +219,27 @@ namespace Alycia
                                 Speak("Fechando");
                                 Runner.FecharChrome();
                             }
+                            else if (GrammarRules.OpenSteam.Any(x => x == speech))
+                            {
+                                Runner.OpenSteam(); // Abre a Steam
+                            }
+                            else if (GrammarRules.OpenDisc.Any(x => x == speech))
+                            {
+                                Runner.OpenDisc(); // Abre o Discord
+                            }
+                            else if (GrammarRules.OpenEpic.Any(x => x == speech))
+                            {
+                                Runner.OpenEpic(); // Abre a Epic Games
+                            }
+                            else if (GrammarRules.OpenOBS.Any(x => x == speech))
+                            {
+                                Runner.OpenOBS(); // Abre o OBS
+                            }
+                            else if (GrammarRules.CloseAly.Any(x => x == speech))
+                            {
+                                this.Close();  // Fecha a assistente
+                            }
+
                             else if (GrammarRules.AbrirNotas.Any(x => x == speech))
                             {
                                 Runner.AbirNota();
@@ -258,7 +279,8 @@ namespace Alycia
                                         {
                                             Speak("Selecione um arquivo");
                                             mediaPlay.OpenFile();
-                                        } else
+                                        }
+                                        else
                                         {
                                             Speak("Media player não está aberto");
                                         }
@@ -309,7 +331,7 @@ namespace Alycia
                 // string[] words = { "Olá", "Boa noite" };
                                                       // Operações
                 Choices c_numero = new Choices();
-                for (int i=0; i <= 100; i++)
+                for (int i=0; i <= 1000; i++)
                 {
                     c_numero.Add(i.ToString());
                 }
@@ -352,6 +374,11 @@ namespace Alycia
                 c_commandsOfSystem.Add(GrammarRules.FecharChrome.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.TempClim.ToArray());
                 c_commandsOfSystem.Add(GrammarRules.MaisInfo.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.OpenSteam.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.OpenDisc.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.OpenEpic.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.OpenOBS.ToArray());
+                c_commandsOfSystem.Add(GrammarRules.CloseAly.ToArray());
 
 
                 GrammarBuilder gb_comandOfSystem = new GrammarBuilder();// 4:22

@@ -38,7 +38,7 @@
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.progressBar1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.progressBar1.Location = new System.Drawing.Point(238, 12);
+            this.progressBar1.Location = new System.Drawing.Point(248, 12);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(153, 20);
             this.progressBar1.TabIndex = 0;
@@ -50,7 +50,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(163, 309);
+            this.label1.Location = new System.Drawing.Point(173, 352);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(301, 20);
@@ -66,7 +66,7 @@
             this.LBLShmyt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLShmyt.ForeColor = System.Drawing.Color.Snow;
             this.LBLShmyt.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.LBLShmyt.Location = new System.Drawing.Point(-8, 329);
+            this.LBLShmyt.Location = new System.Drawing.Point(2, 372);
             this.LBLShmyt.Name = "LBLShmyt";
             this.LBLShmyt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.LBLShmyt.Size = new System.Drawing.Size(646, 20);
@@ -82,11 +82,11 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(631, 358);
+            this.ClientSize = new System.Drawing.Size(651, 401);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.LBLShmyt);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(651, 401);
             this.Name = "Form1";

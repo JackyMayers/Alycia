@@ -12,7 +12,7 @@ namespace Alycia
     class ClimaTempo
     {
 
-        private const string KEY = "Pegar token da api no site da openweathermap";
+        private const string KEY = "API Token em apenwathermap.org ";
 
 
         public static List<string> GetInfoCity(string city)
@@ -24,7 +24,7 @@ namespace Alycia
 
                 using (WebClient web = new WebClient())
                 {
-                    string url = String.Format("http://api.openweathermap.org/data/2.5/weather?q=London&appid={1}&units=metric&lang=pt", city, KEY);
+                    string url = String.Format("http://api.openweathermap.org/data/2.5/weather?q=Mineiros,Goias&appid=881be2d8893d21b3fa9245932265ab31&units=metric&lang=pt", city, KEY);
 
                     var json = web.DownloadString(url);
                     var result = JsonConvert.DeserializeObject<ClimaTempoApp.root>(json);
@@ -39,7 +39,7 @@ namespace Alycia
                     infos.Add(outPut.main.temp.ToString()); // [5] Temperatura
                     infos.Add(outPut.main.temp_min.ToString()); // [6] Temperatura mínima
                     infos.Add(outPut.main.temp_max.ToString()); // [7] Temperatura máxima
-                    infos.Add(outPut.main.fells_like.ToString()); // [8] Sensação térmica
+                    infos.Add(outPut.main.feels_like.ToString()); // [8] Sensação térmica
                     infos.Add(Math.Round((outPut.main.pressure / 1003), 2).ToString()); // [9] Pressão do ar
                     infos.Add(outPut.main.humidity.ToString()); // [10] Humidade, porcentagem
                     infos.Add(outPut.wind.speed.ToString()); // [11] Velocidade do vento

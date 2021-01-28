@@ -1,0 +1,8 @@
+Q A P Alycia=Mandou continuar
+1 mais 1=Mandou continuar
+2 mais 2=Mandou continuar
+Minimizar=Mandou continuar
+Maximizar=Mandou continuar
+Tamanho normal=Mandou continuar
+Obrigado Alycia=Mandou continuar
+Alycia desligar=Mandou continuar

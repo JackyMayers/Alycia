@@ -35,19 +35,24 @@ namespace Alycia
         //Abrir Programas
         public static void AbrirVS()
         {
-            Speaker.Speak("Entendido: Visual Studio");
+            Speaker.Speak("Entendido: Abrindo Visual Studio");
             System.Diagnostics.Process.Start(@"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe");
 
         }
         public static void AbrirVSCode()
         {
-            Speaker.Speak("Entendido: Visual Studio Code");
+            Speaker.Speak("Entendido: Abrindo Visual Studio Code");
             System.Diagnostics.Process.Start(@"C:\Users\fluvi\AppData\Local\Programs\Microsoft VS Code\Code.exe");
 
         }
+        public static void OpenPokerstars()
+        {
+            Speaker.Speak("Entendido: Abrindo Pokerstars");
+            System.Diagnostics.Process.Start(@"C:\Program Files (x86)\PokerStars\PokerStarsUpdate.exe");
+        }
         public static void AbirNota()
         {
-            Speaker.Speak("Entendido: bloco de notas");
+            Speaker.Speak("Entendido: Abrindo bloco de notas");
             System.Diagnostics.Process.Start("notepad.exe");
         }
         public static void FecharNotas()
@@ -63,7 +68,7 @@ namespace Alycia
         }
         public static void OpenCalc()
         {
-            Speaker.Speak("Entendido: Calculadora");
+            Speaker.Speak("Entendido: Abrindo  Calculadora");
             System.Diagnostics.Process.Start("calc.exe");
         }
         public static void CloseCalc()
@@ -77,22 +82,27 @@ namespace Alycia
 
 
         }
+        public static void OpenDisc()
+        {
+            Speaker.Speak("Entendido: Abrindo Discord");
+            System.Diagnostics.Process.Start(@"C:\Users\fluvi\AppData\Local\Discord\app-0.0.309\Discord.exe");
+        }
         //Internet
         public static void OpenEdge()
         {
-            Speaker.Speak("Abrindo navegador Edge");
+            Speaker.Speak("Entendido: Abrindo navegador Edge");
             System.Diagnostics.Process.Start("msedge.exe");
 
         }
         public static void OpenChrome()
         {
-            Speaker.Speak("Abrindo navegador Chrome");
+            Speaker.Speak("Entendido: Abrindo navegador Chrome");
             System.Diagnostics.Process.Start("chrome.exe");
 
         }
         public static void PesquisaGoogle()
         {
-            Speaker.Speak("Abrindo Google");
+            Speaker.Speak("Entendido: Abrindo Google");
             System.Diagnostics.Process.Start("https://www.google.com");
 
         }
@@ -161,7 +171,24 @@ namespace Alycia
         {
             return Loc.GetCityName(ip);
         }
+        
+        public static void OpenSteam()
+        {
+            Speaker.Speak("Entendido: Abrindo Steam");
+            System.Diagnostics.Process.Start(@"C:\Program Files (x86)\Steam\steam.exe");
 
+        }
+        public static void OpenEpic()
+        {
+            Speaker.Speak("Entendido: Abrindo Epic");
+            System.Diagnostics.Process.Start(@"C:\Program Files (x86)\Epic Games\Launcher\Portal\Binaries\Win32\EpicGamesLauncher.exe");
+        }
+        public static void OpenOBS()
+        {
+            Speaker.Speak("Entendido: Abrindo OBS");
+            System.Diagnostics.Process.Start(@"C:\Program Files\obs-studio\bin\64bit\obs64.exe");
+        }
+        
 
     }
 }

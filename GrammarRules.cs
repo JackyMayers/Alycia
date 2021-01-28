@@ -83,7 +83,7 @@ namespace Alycia
         };
         public static IList<string> TrollComand = new List<string>() //Comando do troll
         {
-            "Alycia eu sou bonito"
+            "Alycia porque não está funcionando"
         };
         // Abir programas
         public static List<string> AbrirVSCode = new List<string>()
@@ -150,5 +150,32 @@ namespace Alycia
             "Alycia Informações da cidade",
             "Informações da cidade"
         };
+        public static List<string> OpenSteam = new List<string>()
+        {
+            "Alycia abra a steam"
+        };
+        public static List<string> OpenDisc = new List<string>()
+        {
+            "Alycia abra o discord"
+        };
+        public static List<String> OpenEpic = new List<string>()
+        {
+            "Alycia abra a Epic"
+        };
+        public static List<String> OpenOBS = new List<string>()
+        {
+            "Alycia abra o OBS"
+        };
+        public static List<String> CloseAly = new List<string>()
+        {
+            "Alycia desligar"
+        };
+        public static List<String> OpenPokerstars = new List<string>()
+        {
+            "Alycia abre o Pokerstars"
+        };
+
     }
+    
+    
 }

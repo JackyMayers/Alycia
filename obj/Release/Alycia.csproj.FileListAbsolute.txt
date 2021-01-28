@@ -73,3 +73,53 @@ C:\Users\fluvi\OneDrive\Documentos\GitHub\Alycia\obj\Release\Alycia.csproj.CoreC
 C:\Users\fluvi\OneDrive\Documentos\GitHub\Alycia\obj\Release\Alycia.csproj.CopyComplete
 C:\Users\fluvi\OneDrive\Documentos\GitHub\Alycia\obj\Release\Alycia.exe
 C:\Users\fluvi\OneDrive\Documentos\GitHub\Alycia\obj\Release\Alycia.pdb
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Form1.resx
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Form1.cs
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Form1.Designer.cs
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Alycia.exe.config
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Alycia.exe
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Alycia.pdb
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Microsoft.Speech.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Newtonsoft.Json.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Newtonsoft.Json.xml
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\Interop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.csprojAssemblyReference.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Interop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\AxInterop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.csproj.ResolveComReference.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.Browser.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.Form1.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.SelecVoz.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.Properties.Resources.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.Video.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.csproj.GenerateResource.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.csproj.CoreCompileInputs.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.csproj.CopyComplete
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.exe
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia\obj\Release\Alycia.pdb
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Form1.resx
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Form1.cs
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Form1.Designer.cs
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Alycia.exe.config
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Alycia.exe
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Alycia.pdb
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Microsoft.Speech.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Newtonsoft.Json.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Newtonsoft.Json.xml
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\Interop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.csprojAssemblyReference.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Interop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\AxInterop.WMPLib.dll
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.csproj.ResolveComReference.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.Browser.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.Form1.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.SelecVoz.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.Properties.Resources.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.Video.resources
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.csproj.GenerateResource.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.csproj.CoreCompileInputs.cache
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.csproj.CopyComplete
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.exe
+C:\Users\Fluvio\OneDrive\Documentos\Projects\Alycia Cobaia\Alycia\obj\Release\Alycia.pdb

@@ -27,7 +27,7 @@ namespace Alycia
                 case "vezes":
                     z = x * y;
                     break;
-                case "dividido":
+                case "por":
                     if (x >= y)
                     {
                         z = x / y;
