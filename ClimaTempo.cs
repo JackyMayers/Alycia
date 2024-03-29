@@ -24,7 +24,7 @@ namespace Alycia
 
                 using (WebClient web = new WebClient())
                 {
-                    string url = String.Format("http://api.openweathermap.org/data/2.5/weather?q=Mineiros,Goias&appid=881be2d8893d21b3fa9245932265ab31&units=metric&lang=pt", city, KEY);
+                    string url = String.Format("API", city, KEY);
 
                     var json = web.DownloadString(url);
                     var result = JsonConvert.DeserializeObject<ClimaTempoApp.root>(json);
